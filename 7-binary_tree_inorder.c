@@ -2,7 +2,7 @@
 /**
  * binary_tree_inorder - a Function that ...
  * @tree: Description of tree.
- * @(*func: Description of (*func.
+ * @func: Description of (*func.
  * Return: Description of the return value.
  */
 void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))

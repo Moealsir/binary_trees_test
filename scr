@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Check if the script is executed with proper permissions
+if [ ! -x "$0" ]; then
+    echo "Error: Script is not executable. Please set execute permissions."
+    exit 1
+fi
+
+# Check if the files exist and are readable
+for i in {1..16}*.c; do
+    if [[ -f "$i" && -r "$i" && "$i" != *-main.c ]]; then
+        if [ ! -s "$i" ]; then
+            echo '#include "binary_trees.h"' > "$i"
+            echo "Inserted line in empty file: $i"
+        else
+            sed -i '1s/.*/#include "binary_trees.h"/' "$i"
+            echo "Updated file: $i"
+        fi
+    fi
+done

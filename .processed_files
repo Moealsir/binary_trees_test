@@ -5,3 +5,4 @@
 2-main.c
 3-binary_tree_delete.c
 4-binary_tree_is_leaf.c6-binary_tree_preorder.c
+7-binary_tree_inorder.c

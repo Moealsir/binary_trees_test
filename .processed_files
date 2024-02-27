@@ -4,5 +4,4 @@
 1-main.c
 2-main.c
 3-binary_tree_delete.c
-4-binary_tree_is_leaf.c
-6-binary_tree_preorder.c
+4-binary_tree_is_leaf.c6-binary_tree_preorder.c

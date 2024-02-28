@@ -7,7 +7,7 @@ if [ ! -x "$0" ]; then
 fi
 
 # Check if the files exist and are readable
-for i in {1..16}*.c; do
+for i in {100..135}*.c; do
     if [[ -f "$i" && -r "$i" && "$i" != *-main.c ]]; then
         if [ ! -s "$i" ]; then
             echo '#include "binary_trees.h"' > "$i"

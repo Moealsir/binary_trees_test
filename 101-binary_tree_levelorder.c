@@ -5,6 +5,7 @@
  * @(*func: Description of (*func.
  * Return: Description of the return value.
  */
+
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 {
 	binary_tree_t *sort[1000];

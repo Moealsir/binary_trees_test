@@ -1,6 +1,11 @@
 #include "binary_trees.h"
 
-
+/**
+ * binary_trees_ancestor - a Function that ...
+ * @first: Description of first.
+ * @second: Description of second.
+ * Return: Description of the return value.
+ */
 binary_tree_t *binary_trees_ancestor(
 	const binary_tree_t *first, const binary_tree_t *second)
 {
@@ -20,3 +25,5 @@ binary_tree_t *binary_trees_ancestor(
 		return (var_first);
 	return (binary_trees_ancestor(first->parent, second->parent));
 }
+
+

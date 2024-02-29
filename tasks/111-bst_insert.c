@@ -1,9 +1,8 @@
-#include "binary_trees.h"
 /**
  * bst_insert - a Function that ...
  * @tree: Description of tree.
  * @value: Description of value.
- * Return: Description of the return (value.
+ * Return: Description of the return value.
  */
 bst_t *bst_insert(bst_t **tree, int value)
 {
@@ -11,17 +10,21 @@ bst_t *bst_insert(bst_t **tree, int value)
 
 	if (!tree)
 		return (NULL);
+
 	if (!*tree)
 	{
 		new_node = binary_tree_node(NULL, value);
 		*tree = new_node;
 		return (new_node);
 	}
+
 	current = *tree;
+
 	while (current)
 	{
 		if (value == current->n)
 			return (NULL);
+
 		if (value < current->n)
 		{
 			if (!current->left)
@@ -43,6 +46,7 @@ bst_t *bst_insert(bst_t **tree, int value)
 			current = current->right;
 		}
 	}
+
 	return (NULL);
 }
 

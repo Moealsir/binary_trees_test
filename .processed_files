@@ -19,3 +19,4 @@
 18-binary_tree_uncle.c
 100-binary_trees_ancestor.c
 110-binary_tree_is_bst.c
+111-bst_insert.c

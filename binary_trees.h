@@ -72,5 +72,5 @@ binary_tree_t *binary_trees_ancestor(
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
 int is_bst_util(const binary_tree_t *tree, int min, int max);
 int binary_tree_is_bst(const binary_tree_t *tree);
-
+bst_t *bst_insert(bst_t **tree, int value);
 #endif
